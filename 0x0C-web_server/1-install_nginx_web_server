@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # configures a new Ubuntu machine to respect above requirements
-apt-get -y update
-apt-get -y upgrade
-apt-get -y install nginx
-service nginx start
-echo "Hello World!" > /var/www/html/index.nginx-debian.html
+
+sudo apt update && upgrade
+sudo apt install nginx -y
+echo "Holberton School" | sudo tee /var/www/html/index.html
+sudo service nginx start
