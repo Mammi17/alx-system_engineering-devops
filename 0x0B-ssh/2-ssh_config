@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# an SSH configuration file for the local SSH clien
+
+Host 187642-web-01
+    Hostname 98.98.98.98
+    User ubuntu
+    IdentifyFile ~/.ssh/school
+    PassWordAuthentication no
+    
